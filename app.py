@@ -85,6 +85,7 @@ def extract_details(file_path):
     except Exception as e:
         return (str(e))
 
-
 if __name__ == '__main__':
-    app.run(host="0.0.0.0")
+    # Bind to PORT if defined, otherwise default to 5000.
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
