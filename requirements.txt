@@ -7,3 +7,4 @@ psycopg2==2.8.6
 SQLAlchemy==1.2.11
 Werkzeug==0.14.1
 gunicorn
+PyPDF2==1.26.0
