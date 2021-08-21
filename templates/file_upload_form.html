@@ -2,10 +2,34 @@
 <head>
     <title>upload</title>
 </head>
+<style>
+*{
+    box-sizing: border-box;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    font-style: italic;
+    margin-bottom: 20px;
+}
+#upload-btn{
+    padding: 8px 30px;
+    border: none;
+    background: rgb(74, 155, 248);
+    cursor: pointer;
+}
+</style>
 <body>
-    <form action = "/success" method = "post" enctype="multipart/form-data">
-        <input type="file" name="file" />
-        <input type = "submit" value="Upload">
-    </form>
+    <div class="main-container">
+        <h3>PDF EXTRACTION</h3>
+        <form action = "/success" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".pdf" />
+            <input type="submit" id="upload-btn" value="Upload">
+        </form>
+    </div>
 </body>
 </html>

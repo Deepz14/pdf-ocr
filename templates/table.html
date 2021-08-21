@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF EXTRACTION</title>
+</head>
+<style>
+table {
+  width:100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t01 th {
+  background-color: black;
+  color: white;
+}
+</style>
+<body>
+    <div>
+        <h3 class="table-title">Result</h3>
+        <table>
+            <tr>
+              <th>S.No</th>
+              <th>NAME</th> 
+              <th>CONTACT NUMBER</th>
+              <th>POLICY NUMBER</th>
+            </tr>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Deepz</td>
+                <td>9848454554</td>
+                <td>5161511515</td>
+              </tr>
+              <!-- {% for item in data %}
+                <tr>
+                    <td>{{item[0]}}</td>
+                    <td>{{item[1]}}</td>
+                    <td>{{item[2]}}</td>
+                    <td>{{item[3]}}</td>
+                </tr>
+              {% endfor %} -->
+            </tbody>
+          </table>
+    </div>
+</body>
+</html>
